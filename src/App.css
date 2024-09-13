@@ -1,0 +1,83 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(36, 36, 36); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; 
+  
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(36, 36, 36);
+  height: 100vh;
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%;
+}
+
+.food-item {
+  cursor: pointer;
+  text-align: center;
+}
+
+.food-item img {
+  width: 115px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.food-item img:hover {
+  transform: scale(1.1);
+}
+
+p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.reset-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff4d4d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #ff1a1a;
+}
