@@ -4,7 +4,6 @@ import pigDefault from './assets/MoodengImg.jpg';
 import watermelonImg from './assets/WaterMelonImg.jpg';
 import pumpkinImg from './assets/PumpkinImg.jpg';
 import grassImg from './assets/GlassImg.jpg';
-import mootaImg from './assets/Moota.jpg';
 import V from './assets/V.jpg';
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
   };
 
   const resetLevel = () => {
-    setLevel(0); // ฟังก์ชันรีเซ็ตค่า Level กลับเป็น 0
+    setLevel(0);
   };
 
   const getPigImage = () => {
@@ -31,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>เกมเลี้ยงหมูเต๋า</h1>
+      <h1>เกมเลี้ยงหมูเด้ง</h1>
       <h2>Level: {level}</h2>
 
       <img src={getPigImage()} alt="หมูเต๋า" width={getPigSize()} />
@@ -39,17 +38,17 @@ function App() {
       <div className="food-container">
         <div className="food-item" onClick={() => feedPig(5)}>
           <img src={watermelonImg} alt="แตงโม" />
-          <p>แตงโม + 5 level</p>
+          <p>แตงโม <br />5 level</p>
         </div>
 
         <div className="food-item" onClick={() => feedPig(10)}>
           <img src={pumpkinImg} alt="ฟักทอง" />
-          <p>ฟักทอง + 10 level</p>
+          <p>ฟักทอง <br />10 level</p>
         </div>
 
         <div className="food-item" onClick={() => feedPig(20)}>
           <img src={grassImg} alt="หญ้า" />
-          <p>หญ้า + 20 level</p>
+          <p>หญ้า<br /> 20 level</p>
         </div>
       </div>
 
